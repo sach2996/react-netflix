@@ -1,5 +1,5 @@
 import Accordion from "./Accordian";
-
+import "../index.css";
 export default function FAQ() {
   const faqs = [
     {
