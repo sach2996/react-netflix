@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../index.css";
 function Accordion(prop: { key: number; title: string; description: string }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -7,7 +7,7 @@ function Accordion(prop: { key: number; title: string; description: string }) {
     setIsOpen(!isOpen);
   };
 
-  const iconForAccordian = (isOpen) => {
+  const iconForAccordian = (isOpen: boolean) => {
     if (isOpen) {
       return (
         <svg

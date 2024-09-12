@@ -1,9 +1,7 @@
-import React from "react";
-
-function MovieRow({ movies }) {
+function MovieRow(prop: { movies: any[] }) {
   return (
     <div className="movie-row">
-      {movies.map((movie, index) => (
+      {prop.movies.map((movie, index) => (
         <div className="movie-item" key={index}>
           <img src={movie.poster} alt={movie.title} />
           <div className="movie-details">
