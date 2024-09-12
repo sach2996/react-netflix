@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "../index.css";
 function Accordion(prop: { key: number; title: string; description: string }) {
   const [isOpen, setIsOpen] = useState(false);
 
