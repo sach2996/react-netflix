@@ -1,0 +1,38 @@
+.email-input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    /* Adjust as needed */
+}
+
+.email-label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.email-input-wrapper {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.email-input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.email-input-chrome {
+    /* Style the hidden element for visual consistency (optional) */
+    /* width: 1px; */
+    /* Adjust as needed */
+    /* background-color: #ccc; */
+    /* Adjust as needed */
+}
+
+.validation-message {
+    color: #f00;
+    font-size: 12px;
+    margin-top:

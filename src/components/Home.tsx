@@ -6,6 +6,7 @@ import "../index.css";
 import Signup from "./Signup";
 import LearnMore from "./LearnMore";
 import TrendingNow from "./TrendingNow";
+import Footer from "./Footer";
 
 export default function Home() {
   const homeStyle = {
@@ -16,11 +17,16 @@ export default function Home() {
     <div className="home-style" style={homeStyle}>
       <Navbar />
       <GetStarted />
+      <div style={{ paddingBottom: "50vh" }}>
+        <Signup />
+      </div>
+
       <LearnMore />
       <TrendingNow />
       <More />
       <FAQ />
       <Signup />
+      <Footer />
     </div>
   );
 }

@@ -1,4 +1,11 @@
+import { useNavigate } from "react-router-dom";
+
 export default function Navbar() {
+  const navigate = useNavigate();
+
+  const handleSignInClick = () => {
+    navigate("/signin"); // Replace '/signin' with the actual path to your SignIn component
+  };
   return (
     <div className="navbar-container">
       <svg
@@ -17,7 +24,9 @@ export default function Navbar() {
           <option>English</option>
           <option>French</option>
         </select>
-        <button className="navbar-container-button">Sign In</button>
+        <button className="navbar-container-button" onClick={handleSignInClick}>
+          Sign In
+        </button>
       </span>
     </div>
   );
