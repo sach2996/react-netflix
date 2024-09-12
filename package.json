@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "create-dir": "tsc -b && mkdir -p dist/public && cp -r public/* dist/public",
+    "build": "npm run create-dir && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
