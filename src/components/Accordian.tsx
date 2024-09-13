@@ -65,7 +65,7 @@ function Accordion(prop: { key: number; title: string; description: string }) {
         className="accordion-content"
         style={{ display: isOpen ? "block" : "none" }}
       >
-        <p>{prop.description}</p>
+        <p style={{ textAlign: "left" }}>{prop.description}</p>
       </div>
     </div>
   );
