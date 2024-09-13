@@ -1,5 +1,12 @@
+import { useNavigate } from "react-router-dom";
 import "./signup.css";
 export default function Signup() {
+  const navigate = useNavigate();
+
+  const handleSignUpClick = () => {
+    navigate("/signup");
+  };
+
   return (
     <div className="signup-container">
       <div className="home-text">
@@ -9,7 +16,9 @@ export default function Signup() {
       </div>
       <div className="email-form">
         <input placeholder="Email address" />
-        <button className="get-started-button">Get Started &gt;</button>
+        <button className="get-started-button" onClick={handleSignUpClick}>
+          Get Started &gt;
+        </button>
       </div>
     </div>
   );

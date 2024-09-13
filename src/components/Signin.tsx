@@ -5,16 +5,21 @@ import { useNavigate } from "react-router-dom";
 export default function Signin() {
   const navigate = useNavigate();
 
-  const handleSignInClick = () => {
+  const handleHomeClick = () => {
     navigate("/"); // Replace '/signin' with the actual path to your SignIn component
   };
+  const handleSubmit = (event: { preventDefault: () => void }) => {
+    event.preventDefault();
+    window.alert("Functionality is under development");
+  };
+
   const homeStyle = {
     backgroundImage: "url(public/images/misc/home-bg.jpg)",
     height: "100vh",
   };
   return (
     <div style={homeStyle}>
-      <div className="navbar-container" onClick={handleSignInClick}>
+      <div className="navbar-container" onClick={handleHomeClick}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="100px"
@@ -38,7 +43,9 @@ export default function Signin() {
             type="email"
           />
           <input className="input-box" placeholder="Password" type="password" />
-          <button style={{ backgroundColor: "red" }}>Sign In</button>
+          <button style={{ backgroundColor: "red" }} onClick={handleSubmit}>
+            Sign In
+          </button>
           <p style={{ color: "gray" }}> OR</p>
           <button style={{ backgroundColor: "rgba(128, 128, 128, 0.4)" }}>
             Use a Sign-In Code
