@@ -9,11 +9,15 @@ import TrendingNow from "./TrendingNow";
 import Footer from "./Footer";
 
 export default function Home() {
+  const homeStyle = {
+    backgroundImage: "url(public/images/misc/home-bg.jpg)",
+    height: "100vh",
+  };
   return (
-    <div className="home-style">
+    <div className="home-style" style={homeStyle}>
       <Navbar />
       <GetStarted />
-      <div className="signup-style-home-page">
+      <div style={{ paddingBottom: "50vh" }}>
         <Signup />
       </div>
 

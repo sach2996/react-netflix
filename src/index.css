@@ -21,8 +21,8 @@ a {
 
 .home-style {
   display: block;
-  background-image: url(public/images/misc/home-bg.jpg);
-  height: 100vh;
+  /* background-image: url(public/images/misc/home-bg.jpg);
+  height: 100vh; */
 }
 
 @media (max-width: 768px) {
