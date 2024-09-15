@@ -19,7 +19,10 @@ export default function Signin() {
   };
   return (
     <div style={homeStyle}>
-      <div className="navbar-container" onClick={handleHomeClick}>
+      <div
+        className="navbar-container signin-padding"
+        onClick={handleHomeClick}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="100px"
@@ -46,11 +49,13 @@ export default function Signin() {
           <button style={{ backgroundColor: "red" }} onClick={handleSubmit}>
             Sign In
           </button>
-          <p style={{ color: "gray" }}> OR</p>
+          <p style={{ color: "gray" }} className="center-style">
+            OR
+          </p>
           <button style={{ backgroundColor: "rgba(128, 128, 128, 0.4)" }}>
             Use a Sign-In Code
           </button>
-          <div className="password-link">
+          <div className="password-link center-style">
             <a>Forgot password?</a>
           </div>
           <div className="checkbox-style">
@@ -66,12 +71,10 @@ export default function Signin() {
           <div style={{ color: "gray", width: "100%", marginBottom: "1rem" }}>
             New to Netflix? <a style={{ color: "white" }}>Sign up now</a>{" "}
           </div>
-          <div style={{ color: "gray" }}>
-            <p style={{ fontSize: "13px" }}>
-              This page is protected by Google reCAPTCHA to ensure you're not a
-              bot.
-              <a style={{ color: "#0071eb" }}>Learn more.</a>
-            </p>
+          <div style={{ color: "gray", fontSize: "13px" }}>
+            This page is protected by Google reCAPTCHA to ensure you're not a
+            bot.
+            <a style={{ color: "#0071eb" }}>Learn more.</a>
           </div>
         </form>
       </div>
