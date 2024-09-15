@@ -1,12 +1,6 @@
 export default function More() {
   return (
-    <div
-      style={{
-        backgroundColor: "black",
-        paddingLeft: "10%",
-        paddingRight: "10%",
-      }}
-    >
+    <div className="more">
       <div>
         <h1>More Reasons to Join</h1>
       </div>

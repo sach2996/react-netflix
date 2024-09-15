@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../index.css";
-function Accordion(prop: { key: number; title: string; description: string }) {
+function Accordion(prop: { title: string; description: string }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => {
@@ -22,8 +22,8 @@ function Accordion(prop: { key: number; title: string; description: string }) {
           className="elj7tfr3 default-ltr-cache-b59fc3-Icon-StyledAccordionIcon e164gv2o4"
         >
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z"
             fill="currentColor"
           ></path>
@@ -43,8 +43,8 @@ function Accordion(prop: { key: number; title: string; description: string }) {
           className="elj7tfr3 default-ltr-cache-1k5iouc-Icon-StyledAccordionIcon e164gv2o4"
         >
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z"
             fill="currentColor"
           ></path>
@@ -53,7 +53,7 @@ function Accordion(prop: { key: number; title: string; description: string }) {
     }
   };
   return (
-    <div className="accordion" key={prop.key}>
+    <div className="accordion">
       <div className="accordion-header" onClick={handleToggle}>
         <p>{prop.title}</p>
 

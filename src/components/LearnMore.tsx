@@ -3,7 +3,7 @@ import "../index.css";
 export default function LearnMore() {
   return (
     <div className="learn-more-container">
-      <div>
+      <div className="learn-more-icon">
         <svg width="96" height="96" fill="none">
           <path
             d="M48 95.213c26.51 0 48-3.875 48-8.656 0-4.78-21.49-8.655-48-8.655S0 81.777 0 86.557c0 4.78 21.49 8.656 48 8.656Z"
@@ -540,11 +540,11 @@ export default function LearnMore() {
           <p className="learn-more-text">
             The Netflix you love for just $5.99.
           </p>
-          <p style={{ margin: "0px" }}>
+          <p style={{ textAlign: "start" }}>
             Get our most affordable, ad-supported plan.
           </p>
         </div>
-        <div>
+        <div className="learn-more-button-div">
           <button className="learn-more-button">Learn More</button>
         </div>
       </div>
