@@ -1,6 +1,8 @@
 .signup-form {
     display: flex;
     flex-direction: column;
+    background-color: white;
+    color: black;
 
     p {
         text-align: justify;
@@ -41,4 +43,55 @@
         color: #007bff;
         text-decoration: none;
     }
+}
+
+
+@media (max-width: 768px) {
+
+    .signup-form {
+        display: flex;
+        flex-direction: column;
+
+        p {
+            text-align: justify;
+        }
+
+    }
+
+    .signup-section {
+        padding: 5%;
+        margin-left: 1rem;
+        margin-right: 2rem;
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        input {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: red;
+            color: white;
+            padding: 1rem;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+    }
+
+
 }
