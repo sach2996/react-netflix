@@ -43,11 +43,9 @@ Kids profiles come with PIN-protected parental controls that let you restrict th
     <div className="faq-container">
       <h1>Frequently Asked Questions</h1>
       {faqs.map((item) => (
-        <Accordion
-          key={item.index}
-          title={item.title}
-          description={item.description}
-        />
+        <div key={item.index}>
+          <Accordion title={item.title} description={item.description} />
+        </div>
       ))}
     </div>
   );
