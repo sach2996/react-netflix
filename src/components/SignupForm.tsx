@@ -40,7 +40,7 @@ function SignupForm() {
             <a href="#">Forgot your password?</a>
           </p>
 
-          <button type="submit" onClick={handleSubmit}>
+          <button type="submit" onClick={handleSubmit} disabled>
             Next
           </button>
         </div>

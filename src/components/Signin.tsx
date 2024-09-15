@@ -46,7 +46,11 @@ export default function Signin() {
             type="email"
           />
           <input className="input-box" placeholder="Password" type="password" />
-          <button style={{ backgroundColor: "red" }} onClick={handleSubmit}>
+          <button
+            style={{ backgroundColor: "red" }}
+            onClick={handleSubmit}
+            disabled
+          >
             Sign In
           </button>
           <p style={{ color: "gray" }} className="center-style">
